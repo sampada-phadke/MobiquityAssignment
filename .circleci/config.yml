@@ -21,8 +21,7 @@ jobs:
       # Then run your tests!
       - run:
           name: Test
-          command: pwd
-          command: mvn test
+          command: pwd;mvn test
 
 workflows:
   # Below is the definition of your workflow.
