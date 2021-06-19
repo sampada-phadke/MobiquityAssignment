@@ -19,7 +19,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 
 
 @CucumberOptions(
-		features = "/Users/Sampada/eclipse-workspace/MobiquityAssignment/src/main/java/Features/Users.feature", //the path of the feature files
+		features = "../../../main/java/Features/Users.feature", //the path of the feature files
 		glue={"stepDefinitions"}, //the path of the step definition files
 		format= {"pretty","html:target/cucumber-reports/cucumber-pretty", "json:target/cucumber-reports/CucumberTestReport.json","rerun:target/cucumber-reports/rerun.txt"},
 		//plugin = "json:target/cucumber-reports/CucumberTestReport.json",
