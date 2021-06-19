@@ -23,7 +23,7 @@ jobs:
           name: Test
           command: pwd;mvn test
       - store_artifacts:
-          path: /target/cucumber-pretty
+          path: target/cucumber-pretty
           destination: cucumber-pretty
 workflows:
   # Below is the definition of your workflow.
