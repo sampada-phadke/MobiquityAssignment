@@ -34,14 +34,12 @@
    
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm -->
 <dependency>
-    <groupId>io.cucumber</groupId>
+    <groupId>info.cukes</groupId>
     <artifactId>cucumber-jvm</artifactId>
-    <version>6.10.4</version>
+    <version>1.2.6</version>
     <type>pom</type>
 </dependency>
-
     <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
 
     <!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
@@ -97,11 +95,7 @@
 </dependency>
 <!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
 
-<dependency>
-    <groupId>commons-validator</groupId>
-    <artifactId>commons-validator</artifactId>
-    <version>1.4.1</version>
-</dependency>
+
 
   </dependencies>
 
@@ -122,7 +116,7 @@
        <plugin>
             <groupId>net.masterthought</groupId>
             <artifactId>maven-cucumber-reporting</artifactId>
-            <version>3.15.0</version>
+            <version>5.3.0</version>
             <executions>
                 <execution>
                     <id>execution</id>
@@ -132,11 +126,9 @@
                     </goals>
                     <configuration>
                         <projectName>Mobiquity</projectName>
-                        <outputDirectory>target/advanced-reports</outputDirectory>
-                       <jsonFiles>
-                                <param>target/cucumber.json</param>
-                            </jsonFiles>
-                       <enableFlashCharts>true</enableFlashCharts>
+                        <outputDirectory>target/cucumber-reports/advanced-reports</outputDirectory>
+                        <cucumberOutput>target/cucumber-reports/cucumberTestReport.json</cucumberOutput>
+                       
                         <buildNumber>1</buildNumber>
                         <parallelTesting>false</parallelTesting>
                     </configuration>
